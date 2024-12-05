@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+
+    <section id="home" class="page">
+        <h1>MY PERSONAL <br> PORTFOLIO</h1>
+        <br>
+        <p>Ricky D. Galanza Jr. <br>SBIT-2N</p>
+        <img src="images/profile4.png" alt="Profile" width="370">
+        <nav>
+                <a href="#" onclick="showSection('about')"><b>About Me <Me></b></a>
+                <a href="#" onclick="showSection('projects')"><b>My Projects</b></a>
+        </nav>
+        </section>
+
+        <section id="about" class="page hidden">
+            <h2>ABOUT ME</h2>
+            <p>   I’m Ricky D. Galanza Jr., a 19-year-old born and raised in Quezon City. I’m currently<br> pursuing a degree in Information Technology at Quezon City University. I have a<br> strong interest in web development and software design. My hobbies include listening<br> to music, playing video games, which expose me to new technologies, and watching films.<br> In the near future, I aim to secure a stable job in the IT field and gain hands-on experience<br> to expand my skills.</p>
+            <img src="images/profile2.jpeg" alt="Profile2" width="350" class="about-img">
+            
+            <div class="social-media">
+                <a href="https://www.facebook.com/rickygalanzajr" target="_blank" class="social-btn facebook"><i class = "fab fa-facebook-f"></i>
+                </a>
+                <a href="https://www.instagram.com/rickestrickyy" target="_blank" class="social-btn instagram"><i class="fab fa-instagram"></i>
+                </a>
+                <a href="https://myaccount.google.com/profile?pli=1" target="_blank" class="social-btn google">
+                    <i class="fab fa-google"></i>
+                </a>
+                <a href="https://github.com/rickygalanzajr13" target="_blank" class="social-btn github">
+                    <i class="fab fa-github"></i>
+                </a>
+            
+            </div>
+            
+            <nav>
+                <a href="#" onclick="showSection('home')"><b>Back to Home</b></a>
+            </nav>
+        </section>
+
+        <section id= "projects" class="page hidden">
+            <h1>MY PROJECTS</h1>
+            <h2>ORDERING SYSTEM</h2>
+            <video controls width="700" height="" autoplay muted><source src="videos/ordering.mp4" type="video/mp4">
+            </video>
+            <p>Ordering system that lets the users pick their order by checking the checkboxes of their desired items.<br> After submitting their order the system will generate a receipt that includes all of their order as well as<br> the total amount of their order. Lastly, in the bottom part of the receipt will show the change of the user.
+            </p>
+            <section id="project" class="project">
+                <h2>PAYROLL SYSTEM</h2>
+                <video controls width="700" height="" autoplay muted><source src="videos/payroll.mp4" type="video/mp4"></video>
+                <p>Ordering system that lets the users pick their order by checking the checkboxes of their desired items. After submitting their order the system will generate a receipt that includes all of their order as well as the total amount of their order. Lastly, in the bottom part of the receipt will show the change of the user.</p>
+
+            <section id="info" class="info">
+                <p>Payroll System that allows the user input employee name, hourly rate, hour per day, and number of days worked. Then it will calculate these (Hourly RateXHours Per DayXNumber of Days Worked) to generate a gross pay, as well as the tax deductions with a fixed percentage deduction in the system. The system then will generate the net pay by deducting the total of tax deductions to the gross pay. After computing all of the data, the user will add these into the table, which will appear on the right side of the system. Below the add button are three button: the Receipt button, which converts all of an employee's calculated data into a check. Delete button: to delete any row by clicking on them first. Finally, clear button, to clear all of the rows in the table. This system uses MYSQL database to store collected data.</p>
+            
+            </section>    
+
+            </section>
+            <nav>
+                <a href="#" onclick="showSection('home')" id="back"><b>Back to Home</b></a>
+            </nav>
+        </section>
+
+        <script src="script.js"></script>
+</body>
+</html>
